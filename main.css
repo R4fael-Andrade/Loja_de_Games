@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+}
+
+
+header {
+    background-color: #3366ff;
+    padding: 16px;
+    color: #fff;
+}
+
+header h1 {
+    font-family: "prompt", sans-serif;
+}
+
+header .container {
+    justify-content: space-between;
+ 
+}
+.container ul {
+    display: flex;
+
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 16px;   
+}
+
+.container ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    display: block;
+}
+
+section {
+    padding: 16px;
+    width: 100%;
+}
+
+.container img {
+    height: 420px;
+}
+
+
+section h2 {
+    color: #3366ff;
+    border-bottom: 1px solid #3366ff;
+    font-size: 32px;
+    font-family: "prompt", sans-serif;
+    margin-bottom: 32px;
+}
+
+section p {
+    font-size: 1.2em;
+}
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 10%;
+    padding: 16px;
+    text-align: center;
+ 
+}
+
+
+.produtos img {
+    height: 150px;
+}
+
+.produtos button {
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #3366ff;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+
+}
+
+.produtos button:hover {
+    cursor: pointer;
+    background-color: #183fb4;
+}
+
+footer {
+    margin-top: 32px;
+    background-color: #3366ff;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 640px){
+
+   .container {
+    flex-direction: column;
+
+   }
+
+   .container img {
+   height: 14em;
+   }
+
+   .conteudo {
+    display: block;
+    }
+
+    .container ul {
+        display: block;
+        margin: 10px 0; 
+    }
+
+    .container ul li{
+        margin: 10px 0; 
+    }
+}
+
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .container {
+        flex-direction: column;
+    
+       }
+
+       .conteudo {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+        row-gap: 2%;
+       }
+
+       .container ul {
+        display: block;
+        margin: 10px 0; 
+    }
+
+    .container ul li{
+        margin: 10px 0; 
+    }
+
+}
